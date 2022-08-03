@@ -190,7 +190,7 @@ li a{
 .about-image {
     height: 450px;
     width: 400px;
-    background-image: url("./Lavish.jpg");
+    background-image: url("./Lavish3.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -413,15 +413,38 @@ h1{
     transform: scale(1.3);
     transition: 0.3s;
 }
-@media (max-width:500px) {
+@media (max-width:1000px) {
     .lav{
-        width: 100vw;
-        /* text-align: center; */
+       justify-content: center;
+       flex-direction: column;
+    }
+    .link{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .link .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .link .right{
+        width: 90%;
+        margin: 20px 0;
+        width:calc(100% / 2 - 20px);
     }
 
-    .link{
-        flex-direction: column;
-        padding-top: 100px;
-        width: 100vw;
+
+}
+
+.services .boxes .box{
+    margin: 20px 0;
+    width:calc(100% / 2 - 20px);
+}
+
+@media (max-width:900px){
+    .link img{
+        height: 350px;
+        width: 350px;
     }
 }
+
